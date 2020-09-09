@@ -40,11 +40,15 @@
 
 首先用Multiwfn把TS点的结构转化为xyz格式，用vmd载入。调整视角到合适，预计IRC两端用这个视角看都不会有太大问题。source saveview.tcl，用dump_view命令来提取当前视角，粘贴到draw_DORI.tcl，保存。
 
-## 步骤8 用VMD绘制DORI-sl2r填色图，生成每一帧的图。
+## 步骤8 用VMD绘制DORI-sl2r填色图，生成每一帧渲染所需的dat文件。
 
-使用draw_DORI.tcl
+在VMD中使用draw_DORI.tcl。
 
-## 步骤9 把DORI-sl2r的填色图制作成动画。
+## 步骤9 渲染每一帧的dat文件为bmp
+
+使用render_all.bat，注意里面的tachyon需要指定正确的版本和路径，核心数建议改成合适的。
+
+## 步骤10 把DORI-sl2r的填色图制作成动画。
 
 使用bmp2gif_animate.py
 

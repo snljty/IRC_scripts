@@ -10,7 +10,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.ticker as mtick
 
-ireverse = True # set to True if you want to reverse the data, otherwise set to False
+ireverse = False # set to True if you want to reverse the data, otherwise set to False
 
 def ReadOneElement(f, i, j, pos = 0):
     numberline = 5
@@ -77,8 +77,8 @@ ax1.set_xlabel('Reaction coordinate')
 ax1.set_xticks([])
 ax1.set_title('Mayer Bond Order with Reaction Coordinate')
 fig.legend()
-fig.savefig('Mayer Bond Order with Reaction Coordinate.png')
-fig.savefig('Mayer Bond Order with Reaction Coordinate.svg')
+fig.savefig('Mayer_Bond_Order_with_Reaction_Coordinate.png')
+# fig.savefig('Mayer_Bond_Order_with_Reaction_Coordinate.svg')
 # plt.show()
 
 
