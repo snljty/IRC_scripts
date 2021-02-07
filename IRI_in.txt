@@ -1,0 +1,18 @@
+1000 // Special functions
+2 // Set iuserfunc, current
+99
+5 // Calculate grid data
+100 // User-defined real space function
+-10 // Set extension distance of grid range
+1.5
+3 // High quality grid
+2 // Export data to a Gaussian-type cube file in current folder
+0 // Return to main menu
+5 // Calculate grid data
+15 // Sign(lambda2)*rho
+8 // Use grid setting of another cube file
+userfunc.cub
+2 // Export data to a Gaussian-type cube file in current folder
+0 // Return to main menu
+q
+
