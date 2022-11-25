@@ -1,5 +1,6 @@
 # VMD for WIN64, version 1.9.4 (October 4, 2020)
-set allfile [glob -nocomplain *_IRI.cub] # use all *_IRI.cub files in current folder
+# use all *_IRI.cub files in current folder
+set allfile [glob -nocomplain *_IRI.cub]
 color scale method BGR
 color Display Background white
 axes location Off
