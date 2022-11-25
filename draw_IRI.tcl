@@ -1,5 +1,5 @@
 # VMD for WIN64, version 1.9.4 (October 4, 2020)
-set allfile [glob -nocomplain *_IRI.cub]
+set allfile [glob -nocomplain *_IRI.cub] # use all *_IRI.cub files in current folder
 color scale method BGR
 color Display Background white
 axes location Off
@@ -17,7 +17,7 @@ set viewset {
     }
 }
 foreach fname $allfile {
-    set bname [string range $fname 0 end-9] 
+    set bname [string range $fname 0 end-8] 
     puts "Dealing with $bname ..."
     mol new "${bname}_IRI.cub" type {cube}
     mol addfile "${bname}_sl2r.cub" type {cube}
