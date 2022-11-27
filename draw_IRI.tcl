@@ -18,7 +18,7 @@ set viewset {
     }
 }
 foreach fname $allfile {
-    set bname [string range $fname 0 end-8] 
+    set bname [string range $fname 0 [expr [string last {_} $fname] - 1]]
     puts "Dealing with $bname ..."
     mol new "${bname}_IRI.cub" type {cube}
     mol addfile "${bname}_sl2r.cub" type {cube}
